@@ -10,8 +10,8 @@ def main():
     choice = input("Ваш вибір: ")
 
     if choice == '1':
-        d = float(input("Введіть відстань (метри): "))
-        t = float(input("Введіть час (секунди): "))
+        d = float(input("Введіть відстань : ", 'метрів'))
+        t = float(input("Введіть час : ", 'секунди'))
         v = calculate_speed(d, t)
         print(f"Швидкість: {v} м/с")
     elif choice == '2':
@@ -20,7 +20,7 @@ def main():
         d = calculate_distance(v, t)
         print(f"Відстань: {d} метри")
     elif choice == '3':
-        d = float(input("Введіть відстань (метри): "))
+        d = float(input("Введіть відстань : ", 'метрів'))
         v = float(input("Введіть швидкість (м/с): "))
         t = calculate_time(d, v)
         print(f"Час: {t} секунди")
